@@ -613,191 +613,250 @@ namespace SongProject
 
         private void InitializeComponent()
         {
-            this.components = (IContainer)new Container();
-            ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(frmMain));
-            this.btnAnnounce = new Button();
-            this.label1 = new Label();
-            this.txtTitle = new TextBox();
-            this.txtPresentation = new TextBox();
-            this.label2 = new Label();
-            this.txtBody = new TextBox();
-            this.listSongs = new ListBox();
-            this.lstContext = new ContextMenuStrip(this.components);
-            this.addToFavoritesToolStripMenuItem = new ToolStripMenuItem();
-            this.deleteSongToolStripMenuItem = new ToolStripMenuItem();
-            this.label4 = new Label();
-            this.boxFind = new ComboBox();
-            this.label3 = new Label();
-            this.listSaved = new ListBox();
-            this.favContext = new ContextMenuStrip(this.components);
-            this.deleteToolStripMenuItem = new ToolStripMenuItem();
-            this.btnAddNew = new Button();
-            this.saveImg = new PictureBox();
+            this.components = new System.ComponentModel.Container();
+            this.btnAnnounce = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.txtPresentation = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtBody = new System.Windows.Forms.TextBox();
+            this.listSongs = new System.Windows.Forms.ListBox();
+            this.lstContext = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.addToFavoritesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteSongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label4 = new System.Windows.Forms.Label();
+            this.boxFind = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.listSaved = new System.Windows.Forms.ListBox();
+            this.favContext = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddNew = new System.Windows.Forms.Button();
+            this.saveImg = new System.Windows.Forms.PictureBox();
             this.lstContext.SuspendLayout();
             this.favContext.SuspendLayout();
-            ((ISupportInitialize)this.saveImg).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveImg)).BeginInit();
             this.SuspendLayout();
-            this.btnAnnounce.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)238);
-            this.btnAnnounce.Location = new Point(12, 42);
+            // 
+            // btnAnnounce
+            // 
+            this.btnAnnounce.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnAnnounce.Location = new System.Drawing.Point(12, 42);
             this.btnAnnounce.Name = "btnAnnounce";
-            this.btnAnnounce.Size = new Size(114, 27);
+            this.btnAnnounce.Size = new System.Drawing.Size(114, 27);
             this.btnAnnounce.TabIndex = 0;
             this.btnAnnounce.Text = "Announce";
             this.btnAnnounce.UseVisualStyleBackColor = true;
-            this.btnAnnounce.Click += new EventHandler(this.button1_Click);
+            this.btnAnnounce.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
             this.label1.AutoSize = true;
-            this.label1.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)0);
-            this.label1.Location = new Point(258, 16);
+            this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(258, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Title:";
-            this.txtTitle.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            this.txtTitle.Font = new Font("Verdana", 9f, FontStyle.Regular, GraphicsUnit.Point, (byte)0);
-            this.txtTitle.Location = new Point(357, 12);
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTitle.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.Location = new System.Drawing.Point(357, 12);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new Size(274, 22);
+            this.txtTitle.Size = new System.Drawing.Size(274, 22);
             this.txtTitle.TabIndex = 2;
-            this.txtTitle.TextChanged += new EventHandler(this.txtPresentation_TextChanged);
-            this.txtPresentation.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            this.txtPresentation.Font = new Font("Verdana", 9f, FontStyle.Regular, GraphicsUnit.Point, (byte)0);
-            this.txtPresentation.Location = new Point(357, 46);
+            this.txtTitle.TextChanged += new System.EventHandler(this.txtPresentation_TextChanged);
+            // 
+            // txtPresentation
+            // 
+            this.txtPresentation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPresentation.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPresentation.Location = new System.Drawing.Point(357, 46);
             this.txtPresentation.Name = "txtPresentation";
-            this.txtPresentation.Size = new Size(274, 22);
+            this.txtPresentation.Size = new System.Drawing.Size(274, 22);
             this.txtPresentation.TabIndex = 4;
-            this.txtPresentation.TextChanged += new EventHandler(this.txtPresentation_TextChanged);
+            this.txtPresentation.TextChanged += new System.EventHandler(this.txtPresentation_TextChanged);
+            // 
+            // label2
+            // 
             this.label2.AutoSize = true;
-            this.label2.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)0);
-            this.label2.Location = new Point(258, 49);
+            this.label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(258, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new Size(83, 13);
+            this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Presentation:";
-            this.txtBody.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            this.txtBody.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)238);
-            this.txtBody.Location = new Point(261, 75);
+            // 
+            // txtBody
+            // 
+            this.txtBody.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBody.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtBody.Location = new System.Drawing.Point(261, 75);
             this.txtBody.Multiline = true;
             this.txtBody.Name = "txtBody";
-            this.txtBody.ScrollBars = ScrollBars.Vertical;
-            this.txtBody.Size = new Size(370, 308);
+            this.txtBody.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtBody.Size = new System.Drawing.Size(370, 308);
             this.txtBody.TabIndex = 5;
-            this.txtBody.TextChanged += new EventHandler(this.txtPresentation_TextChanged);
-            this.listSongs.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            this.txtBody.TextChanged += new System.EventHandler(this.txtPresentation_TextChanged);
+            // 
+            // listSongs
+            // 
+            this.listSongs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.listSongs.ContextMenuStrip = this.lstContext;
-            this.listSongs.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)238);
+            this.listSongs.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listSongs.FormattingEnabled = true;
-            this.listSongs.Location = new Point(12, 75);
+            this.listSongs.Location = new System.Drawing.Point(12, 75);
             this.listSongs.Name = "listSongs";
-            this.listSongs.Size = new Size(237, 303);
+            this.listSongs.Size = new System.Drawing.Size(237, 303);
             this.listSongs.TabIndex = 7;
-            this.listSongs.SelectedIndexChanged += new EventHandler(this.listBox1_SelectedIndexChanged);
-            this.listSongs.KeyDown += new KeyEventHandler(this.listBox1_KeyDown);
-            this.listSongs.MouseUp += new MouseEventHandler(this.listBox1_MouseUp);
-            this.lstContext.Items.AddRange(new ToolStripItem[2]
-            {
-        (ToolStripItem) this.addToFavoritesToolStripMenuItem,
-        (ToolStripItem) this.deleteSongToolStripMenuItem
-            });
+            this.listSongs.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listSongs.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listBox1_KeyDown);
+            this.listSongs.MouseUp += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseUp);
+            // 
+            // lstContext
+            // 
+            this.lstContext.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addToFavoritesToolStripMenuItem,
+            this.deleteSongToolStripMenuItem});
             this.lstContext.Name = "lstContext";
-            this.lstContext.Size = new Size(144, 48);
-            this.lstContext.Opening += new CancelEventHandler(this.lstContext_Opening);
+            this.lstContext.Size = new System.Drawing.Size(144, 48);
+            this.lstContext.Opening += new System.ComponentModel.CancelEventHandler(this.lstContext_Opening);
+            // 
+            // addToFavoritesToolStripMenuItem
+            // 
             this.addToFavoritesToolStripMenuItem.Name = "addToFavoritesToolStripMenuItem";
-            this.addToFavoritesToolStripMenuItem.Size = new Size(143, 22);
+            this.addToFavoritesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.addToFavoritesToolStripMenuItem.Text = "Add to saved";
-            this.addToFavoritesToolStripMenuItem.Click += new EventHandler(this.addToFavoritesToolStripMenuItem_Click);
+            this.addToFavoritesToolStripMenuItem.Click += new System.EventHandler(this.addToFavoritesToolStripMenuItem_Click);
+            // 
+            // deleteSongToolStripMenuItem
+            // 
             this.deleteSongToolStripMenuItem.Name = "deleteSongToolStripMenuItem";
-            this.deleteSongToolStripMenuItem.Size = new Size(143, 22);
+            this.deleteSongToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.deleteSongToolStripMenuItem.Text = "Delete song";
-            this.deleteSongToolStripMenuItem.Click += new EventHandler(this.deleteSongToolStripMenuItem_Click);
+            this.deleteSongToolStripMenuItem.Click += new System.EventHandler(this.deleteSongToolStripMenuItem_Click);
+            // 
+            // label4
+            // 
             this.label4.AutoSize = true;
-            this.label4.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)238);
-            this.label4.Location = new Point(9, 16);
+            this.label4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(9, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Search:";
-            this.boxFind.AutoCompleteMode = AutoCompleteMode.Suggest;
-            this.boxFind.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            this.boxFind.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)238);
+            // 
+            // boxFind
+            // 
+            this.boxFind.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.boxFind.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.boxFind.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.boxFind.FormattingEnabled = true;
-            this.boxFind.Location = new Point(67, 13);
+            this.boxFind.Location = new System.Drawing.Point(67, 13);
             this.boxFind.Name = "boxFind";
-            this.boxFind.Size = new Size(185, 21);
+            this.boxFind.Size = new System.Drawing.Size(185, 21);
             this.boxFind.TabIndex = 9;
-            this.boxFind.SelectedIndexChanged += new EventHandler(this.boxFind_SelectedIndexChanged);
-            this.boxFind.TextChanged += new EventHandler(this.boxFind_TextChanged);
-            this.label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            this.boxFind.SelectedIndexChanged += new System.EventHandler(this.boxFind_SelectedIndexChanged);
+            this.boxFind.TextChanged += new System.EventHandler(this.boxFind_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)0);
-            this.label3.Location = new Point(682, 21);
+            this.label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(682, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new Size(82, 13);
+            this.label3.Size = new System.Drawing.Size(82, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "Saved Songs";
-            this.listSaved.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            // 
+            // listSaved
+            // 
+            this.listSaved.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listSaved.ContextMenuStrip = this.favContext;
-            this.listSaved.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)238);
+            this.listSaved.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listSaved.FormattingEnabled = true;
-            this.listSaved.Location = new Point(646, 42);
+            this.listSaved.Location = new System.Drawing.Point(646, 42);
             this.listSaved.Name = "listSaved";
-            this.listSaved.Size = new Size(150, 342);
+            this.listSaved.Size = new System.Drawing.Size(150, 342);
             this.listSaved.TabIndex = 11;
-            this.listSaved.SelectedIndexChanged += new EventHandler(this.listBox2_SelectedIndexChanged);
-            this.favContext.Items.AddRange(new ToolStripItem[1]
-            {
-        (ToolStripItem) this.deleteToolStripMenuItem
-            });
+            this.listSaved.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // favContext
+            // 
+            this.favContext.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem});
             this.favContext.Name = "favContext";
-            this.favContext.Size = new Size(180, 26);
-            this.favContext.Opening += new CancelEventHandler(this.favContext_Opening);
+            this.favContext.Size = new System.Drawing.Size(180, 26);
+            this.favContext.Opening += new System.ComponentModel.CancelEventHandler(this.favContext_Opening);
+            // 
+            // deleteToolStripMenuItem
+            // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new Size(179, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.deleteToolStripMenuItem.Text = "Remove from saved";
-            this.deleteToolStripMenuItem.Click += new EventHandler(this.deleteToolStripMenuItem_Click);
-            this.btnAddNew.Font = new Font("Verdana", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte)238);
-            this.btnAddNew.Location = new Point(132, 42);
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // btnAddNew
+            // 
+            this.btnAddNew.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnAddNew.Location = new System.Drawing.Point(132, 42);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new Size(117, 27);
+            this.btnAddNew.Size = new System.Drawing.Size(117, 27);
             this.btnAddNew.TabIndex = 12;
             this.btnAddNew.Text = "Add new";
             this.btnAddNew.UseVisualStyleBackColor = true;
-            this.btnAddNew.Click += new EventHandler(this.button2_Click);
-            this.saveImg.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            this.saveImg.Location = new Point(577, 345);
+            this.btnAddNew.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // saveImg
+            // 
+            this.saveImg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveImg.Location = new System.Drawing.Point(577, 345);
             this.saveImg.Name = "saveImg";
-            this.saveImg.Size = new Size(32, 32);
-            this.saveImg.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.saveImg.Size = new System.Drawing.Size(32, 32);
+            this.saveImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.saveImg.TabIndex = 14;
             this.saveImg.TabStop = false;
-            this.AutoScaleDimensions = new SizeF(6f, 13f);
-            this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(808, 397);
-            this.Controls.Add((Control)this.saveImg);
-            this.Controls.Add((Control)this.btnAddNew);
-            this.Controls.Add((Control)this.listSaved);
-            this.Controls.Add((Control)this.label3);
-            this.Controls.Add((Control)this.boxFind);
-            this.Controls.Add((Control)this.label4);
-            this.Controls.Add((Control)this.listSongs);
-            this.Controls.Add((Control)this.txtBody);
-            this.Controls.Add((Control)this.txtPresentation);
-            this.Controls.Add((Control)this.label2);
-            this.Controls.Add((Control)this.txtTitle);
-            this.Controls.Add((Control)this.label1);
-            this.Controls.Add((Control)this.btnAnnounce);
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(808, 397);
+            this.Controls.Add(this.saveImg);
+            this.Controls.Add(this.btnAddNew);
+            this.Controls.Add(this.listSaved);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.boxFind);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.listSongs);
+            this.Controls.Add(this.txtBody);
+            this.Controls.Add(this.txtPresentation);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtTitle);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAnnounce);
             this.KeyPreview = true;
-            this.MinimumSize = new Size(824, 435);
+            this.MinimumSize = new System.Drawing.Size(824, 435);
             this.Name = "frmMain";
-            this.Text = "SongProject 0.9.7 BETA";
-            this.FormClosing += new FormClosingEventHandler(this.frmMain_FormClosing);
-            this.Load += new EventHandler(this.frmMain_Load);
-            this.Shown += new EventHandler(this.frmMain_Shown);
-            this.KeyDown += new KeyEventHandler(this.frmMain_KeyDown);
+            this.Text = "SongProject 0.9.7-beta1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Shown += new System.EventHandler(this.frmMain_Shown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.lstContext.ResumeLayout(false);
             this.favContext.ResumeLayout(false);
-            ((ISupportInitialize)this.saveImg).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }
