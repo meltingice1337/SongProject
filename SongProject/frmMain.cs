@@ -121,7 +121,7 @@ namespace SongProject
                 }
                 this.listSongs.SelectedItem = (object)this.txtTitle.Text;
             }
-            else
+            else if(this.listSongs.SelectedItem != null)
             {
                 this.boxFind.Text = "";
                 object selectedItem = this.listSongs.SelectedItem;
